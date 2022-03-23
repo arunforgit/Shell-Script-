@@ -6,7 +6,7 @@
 # START #
 THRESHOLD=80
 mailto="abcd@example.com"
-HOSTNAME=$ (hostname)    #for knowing which hostanem is critical, so passed the variable
+HOSTNAME=$ (hostname)    #for knowing which hostname is critical, so passed the variable
 
 for path in '/bin/df -h | grep -vE 'Filesystem| tmpfs' | awk '{print $5}' | sed 's/%//g' '
 do 
